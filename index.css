@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-display: 'Syne', sans-serif;
+    --font-body: 'Plus Jakarta Sans', sans-serif;
+    --font-serif: 'Cormorant Garamond', Georgia, serif;
+    --font-mono: 'JetBrains Mono', monospace;
+    --bg-dark: #050505;
+    --bg-elevated: #0d0d0f;
+    --border-subtle: rgba(255, 255, 255, 0.08);
+  }
+
+  body {
+    font-family: var(--font-body);
+    background-color: var(--bg-dark);
+    color: #f4f4f5;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: var(--font-display);
+    letter-spacing: -0.03em;
+  }
+
+  .font-editorial-serif {
+    font-family: var(--font-serif);
+  }
+
+  .font-mono-tech {
+    font-family: var(--font-mono);
+  }
+}
+
+/* Deep Cinema Vignette & Studio Lighting FX */
+.studio-vignette {
+  background: radial-gradient(circle at 50% 50%, rgba(20, 20, 24, 0.3) 0%, rgba(5, 5, 5, 0.8) 75%, #050505 100%);
+}
+
+.studio-spotlight {
+  background: radial-gradient(600px circle at var(--mouse-x, 50%) var(--mouse-y, 45%), rgba(255, 255, 255, 0.04), transparent 60%);
+}
+
+/* Subtle luxury dark card styling */
+.dark-panel {
+  background-color: rgba(13, 13, 15, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(20px);
+}
+
+.dark-panel-hover {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.dark-panel-hover:hover {
+  border-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(20, 20, 24, 0.95);
+}
+
+/* Custom minimal scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #050505;
+}
+::-webkit-scrollbar-thumb {
+  background: #27272a;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3f3f46;
+}
+
+/* Prevent text selection during drag/scrub */
+.no-select {
+  user-select: none;
+  -webkit-user-select: none;
+}
