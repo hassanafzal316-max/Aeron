@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import Lenis from 'lenis';
 import { COLORWAYS } from './productData';
 import { Colorway, CartItem } from './types';
-import { Navigation } from './components/Navigation';
+import { Navigation } from './Navigation';
 import { CinematicStage } from './components/CinematicStage';
 import { BagDrawer } from './components/BagDrawer';
 import { sound } from './utils/sound';
