@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Lenis from 'lenis';
-import { COLORWAYS } from './data/productData';
+import { COLORWAYS } from './productData';
 import { Colorway, CartItem } from './types';
 import { Navigation } from './components/Navigation';
 import { CinematicStage } from './components/CinematicStage';
