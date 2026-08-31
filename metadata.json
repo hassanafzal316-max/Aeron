@@ -1,0 +1,6 @@
+{
+  "name": "AERON — BUILT TO MOVE",
+  "description": "A cinematic, scroll-driven luxury footwear experience for the AERON 01 sneaker.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
